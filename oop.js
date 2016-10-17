@@ -12,8 +12,9 @@ Building.prototype.build = function(){
 
 
 function Bungalow(rooms, color, storey){
-	this.name = "Bungalow";
-	this.rooms = rooms;
+    //polymorhism
+    this.name = "Bungalow";
+    this.rooms = rooms;
     this.color = color;
     this.storey = storey;
 }
