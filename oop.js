@@ -1,3 +1,4 @@
+//constructor
 function Building(rooms, color, storey){
   //property of the class
   this.name = "House";
@@ -5,18 +6,18 @@ function Building(rooms, color, storey){
   this.color = color;
   this.storey = storey;
 }
-
+//method
 Building.prototype.build = function(){
     return "A " + this.name + ", with " + this.rooms + " rooms" + " painted " + this.color + " having "  + this.storey + " stories"
 }
-
+//method
 Building.prototype.demolish = function(vehicle){
 	if(arguments.length === 0){
 		return "please enter a demolition vehicle"
 	}
 	return "demolish " + this.rooms + " rooms with a " + vehicle;
 }
-
+//Bungalow constructor inheritance from Building Parent
 function Bungalow(rooms, color, storey){
 	Building.call(this, rooms, color, storey)
     //polymorphism
